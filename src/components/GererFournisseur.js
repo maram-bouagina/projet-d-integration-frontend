@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './GererFournisseur.css';
 
+
 const GererFournisseur = () => {
   const [fournisseurs, setFournisseurs] = useState([]);
   const [showModal, setShowModal] = useState(false);
@@ -22,7 +23,7 @@ const GererFournisseur = () => {
     } else {
       setFournisseurs([...fournisseurs, { // this adds a provider to the array list if current fournisseur is empty lil ajout 
         ...currentFournisseur, 
-        id: Date.now()   // bech regenerate a unique id 
+        id: Date.now()   // bech generate a unique id 
       }]);
     }
     setShowModal(false);
